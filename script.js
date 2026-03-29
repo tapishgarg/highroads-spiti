@@ -2,6 +2,41 @@
    HIGH ROADS SPITI — SCRIPT
    =========================== */
 
+// ============================================================
+// CONTACT CONFIG — only edit these two values
+// ============================================================
+const WHATSAPP_NUMBER  = 'YOUR_PHONE_NUMBER';    // country code + number, no + or spaces e.g. 919876543210
+const INSTAGRAM_HANDLE = 'YOUR_INSTAGRAM_HANDLE'; // username only, no @ e.g. highroads_spiti
+const PHONE_DIALABLE   = '+YOUR_PHONE_NUMBER';   // with + prefix e.g. +919876543210
+// ============================================================
+
+function applyContactConfig() {
+  // Update all WhatsApp links — preserves each link's pre-filled message
+  document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+    a.href = a.href.replace(/wa\.me\/[^?#]+/, `wa.me/${WHATSAPP_NUMBER}`);
+  });
+
+  // Update all phone links
+  document.querySelectorAll('a[href^="tel:"]').forEach(a => {
+    a.href = `tel:${PHONE_DIALABLE}`;
+  });
+
+  // Update all Instagram links
+  document.querySelectorAll('a[href*="instagram.com"]').forEach(a => {
+    a.href = `https://instagram.com/${INSTAGRAM_HANDLE}`;
+  });
+
+  // Update display text for phone and Instagram
+  document.querySelectorAll('[data-contact="phone"]').forEach(el => {
+    el.textContent = PHONE_DIALABLE;
+  });
+  document.querySelectorAll('[data-contact="instagram"]').forEach(el => {
+    el.textContent = `@${INSTAGRAM_HANDLE}`;
+  });
+}
+
+applyContactConfig();
+
 // --- Navbar: add .scrolled class on scroll ---
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
