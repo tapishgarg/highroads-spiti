@@ -5,9 +5,9 @@
 // ============================================================
 // CONTACT CONFIG — only edit these two values
 // ============================================================
-const WHATSAPP_NUMBER  = 'YOUR_PHONE_NUMBER';    // country code + number, no + or spaces e.g. 919876543210
-const INSTAGRAM_HANDLE = 'YOUR_INSTAGRAM_HANDLE'; // username only, no @ e.g. highroads_spiti
-const PHONE_DIALABLE   = '+YOUR_PHONE_NUMBER';   // with + prefix e.g. +919876543210
+const WHATSAPP_NUMBER  = '917018347990';    // country code + number, no + or spaces e.g. 919876543210
+const INSTAGRAM_HANDLE = 'bablu8031'; // username only, no @ e.g. highroads_spiti
+const PHONE_DIALABLE   = '+917018347990';   // with + prefix e.g. +919876543210
 // ============================================================
 
 function applyContactConfig() {
