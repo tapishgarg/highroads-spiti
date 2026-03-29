@@ -363,9 +363,9 @@ ul { list-style: none; }
   color: var(--white);
   border-color: transparent;
 }
-.tour-card--featured h3 { color: var(--white); }
-.tour-card--featured p { color: rgba(255,255,255,0.75); }
-.tour-card--featured .tour-highlights li { color: rgba(255,255,255,0.7); }
+.tour-card.tour-card--featured h3 { color: var(--white); }
+.tour-card.tour-card--featured p { color: rgba(255,255,255,0.75); }
+.tour-card.tour-card--featured .tour-highlights li { color: rgba(255,255,255,0.7); }
 .tour-card--featured .tour-highlights i { color: var(--amber); }
 
 .tour-badge {
