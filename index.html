@@ -81,68 +81,425 @@
       <div class="section-header">
         <p class="section-tag">What We Offer</p>
         <h2>Popular Tours &amp; Routes</h2>
-        <p class="section-desc">From week-long expeditions to single-day escapes — customised to your pace.</p>
+        <p class="section-desc">Curated packages for every traveller — road trips, bike tours, and valley escapes. Tap a category to explore.</p>
       </div>
-      <div class="tours-grid">
 
-        <div class="tour-card">
-          <div class="tour-icon"><i class="fa-solid fa-route"></i></div>
-          <h3>Shimla → Spiti Circuit</h3>
-          <p>The classic Hindustan-Tibet Highway route via Narkanda, Rampur, Recong Peo, and Kaza.</p>
-          <ul class="tour-highlights">
-            <li><i class="fa-solid fa-location-dot"></i> Nako Lake</li>
-            <li><i class="fa-solid fa-location-dot"></i> Tabo Monastery</li>
-            <li><i class="fa-solid fa-location-dot"></i> Kaza</li>
-          </ul>
-          <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I'm%20interested%20in%20the%20Shimla-Spiti%20Circuit%20tour!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp"></i> Book This Tour
-          </a>
-        </div>
-
-        <div class="tour-card tour-card--featured">
-          <span class="tour-badge">Most Popular</span>
-          <div class="tour-icon"><i class="fa-solid fa-mountain"></i></div>
-          <h3>Kaza Base Circuit</h3>
-          <p>Explore the heart of Spiti — monasteries, fossil sites, and the highest inhabited villages on Earth.</p>
-          <ul class="tour-highlights">
-            <li><i class="fa-solid fa-location-dot"></i> Key Monastery</li>
-            <li><i class="fa-solid fa-location-dot"></i> Kibber Village</li>
-            <li><i class="fa-solid fa-location-dot"></i> Langza Fossils</li>
-          </ul>
-          <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I'm%20interested%20in%20the%20Kaza%20Base%20Circuit%20tour!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp"></i> Book This Tour
-          </a>
-        </div>
-
-        <div class="tour-card">
-          <div class="tour-icon"><i class="fa-solid fa-water"></i></div>
-          <h3>Chandratal Lake Day Trip</h3>
-          <p>The "Moon Lake" at 4,300m — a breathtaking high-altitude lake with mirror-like reflections.</p>
-          <ul class="tour-highlights">
-            <li><i class="fa-solid fa-location-dot"></i> Chandratal Lake</li>
-            <li><i class="fa-solid fa-location-dot"></i> Kunzum Pass</li>
-            <li><i class="fa-solid fa-location-dot"></i> Batal</li>
-          </ul>
-          <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I'm%20interested%20in%20the%20Chandratal%20Lake%20trip!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp"></i> Book This Tour
-          </a>
-        </div>
-
-        <div class="tour-card">
-          <div class="tour-icon"><i class="fa-solid fa-map"></i></div>
-          <h3>Custom Itinerary</h3>
-          <p>Have your own plan? I'll drive you anywhere in Spiti — flexible dates, your pace, your destinations.</p>
-          <ul class="tour-highlights">
-            <li><i class="fa-solid fa-location-dot"></i> Pin Valley</li>
-            <li><i class="fa-solid fa-location-dot"></i> Dhankar Fort</li>
-            <li><i class="fa-solid fa-location-dot"></i> Any custom route</li>
-          </ul>
-          <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27d%20like%20to%20plan%20a%20custom%20Spiti%20Valley%20trip!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp"></i> Discuss Your Trip
-          </a>
-        </div>
-
+      <!-- Category Tabs -->
+      <div class="tours-tabs" role="tablist" aria-label="Tour categories">
+        <button class="tab-btn active" data-tab="summer" role="tab" aria-selected="true" aria-controls="tab-summer">
+          <i class="fa-solid fa-sun"></i>
+          <span>Summer Spiti</span>
+          <span class="tab-season">Jun – Oct</span>
+        </button>
+        <button class="tab-btn" data-tab="bike" role="tab" aria-selected="false" aria-controls="tab-bike">
+          <i class="fa-solid fa-motorcycle"></i>
+          <span>Bike Tours</span>
+          <span class="tab-season">Apr – Sep</span>
+        </button>
+        <button class="tab-btn" data-tab="winter" role="tab" aria-selected="false" aria-controls="tab-winter">
+          <i class="fa-solid fa-snowflake"></i>
+          <span>Year-round</span>
+          <span class="tab-season">Oct – Jun</span>
+        </button>
+        <button class="tab-btn" data-tab="kinnaur" role="tab" aria-selected="false" aria-controls="tab-kinnaur">
+          <i class="fa-solid fa-leaf"></i>
+          <span>Kinnaur</span>
+          <span class="tab-season">All Year</span>
+        </button>
       </div>
+
+      <!-- ===== TAB: SUMMER SPITI ===== -->
+      <div class="tab-panel active" id="tab-summer" role="tabpanel">
+        <div class="itinerary-layout">
+          <div class="itinerary-image-col">
+            <div class="itinerary-sheet-card">
+              <div class="sheet-header">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Full Itinerary Sheet</span>
+              </div>
+              <img src="assets/images/wa1.jpeg" alt="Summer Spiti Valley itinerary — 4N5D, 7N8D, 8N9D packages" loading="lazy" />
+            </div>
+          </div>
+          <div class="packages-col">
+
+            <div class="pkg-card">
+              <div class="pkg-header">
+                <div class="pkg-duration">4N<br>5D</div>
+                <div class="pkg-info">
+                  <h3>Moonlake Drive</h3>
+                  <p>Manali &rarr; Kaza &rarr; Chandratal &rarr; Manali</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Manali &rarr; Kaza</li>
+                  <li><strong>Day 2</strong> Kaza &rarr; Tabo &rarr; Dhankar &rarr; Pin Valley &rarr; Kaza</li>
+                  <li><strong>Day 3</strong> Kaza &rarr; Kee &rarr; Langza &rarr; Hikkim &rarr; Komic &rarr; Kaza</li>
+                  <li><strong>Day 4</strong> Kaza &rarr; Kibber &rarr; Chicham Bridge &rarr; Kunzum &rarr; Chandratal</li>
+                  <li><strong>Day 5</strong> Chandratal &rarr; Atal Tunnel &rarr; Manali</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%204N5D%20Moonlake%20Drive%20package!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+            <div class="pkg-card pkg-card--featured">
+              <span class="pkg-badge">Most Popular</span>
+              <div class="pkg-header">
+                <div class="pkg-duration">7N<br>8D</div>
+                <div class="pkg-info">
+                  <h3>Spiti Classic Road Trip</h3>
+                  <p>Chandigarh &rarr; Sangla &rarr; Kaza &rarr; Chandratal &rarr; Manali</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Chandigarh &rarr; Rampur Bushar</li>
+                  <li><strong>Day 2</strong> Rampur Bushar &rarr; Sangla</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Kalpa &rarr; Nako</li>
+                  <li><strong>Day 4</strong> Nako &rarr; Gue &rarr; Tabo &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 5</strong> Kaza &rarr; Kee &rarr; Langza &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 6</strong> Kaza &rarr; Kibber &rarr; Chicham Bridge &rarr; Kunzum La &rarr; Chandratal</li>
+                  <li><strong>Day 7</strong> Chandratal &rarr; Atal Tunnel &rarr; Manali</li>
+                  <li><strong>Day 8</strong> Manali &rarr; Chandigarh</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%207N8D%20Spiti%20Classic%20Road%20Trip!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+            <div class="pkg-card">
+              <div class="pkg-header">
+                <div class="pkg-duration">8N<br>9D</div>
+                <div class="pkg-info">
+                  <h3>Marvelous Kinnaur–Spiti</h3>
+                  <p>Chandigarh &rarr; Chitkul &rarr; Kaza &rarr; Chandratal &rarr; Manali</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Chandigarh &rarr; Narkanda</li>
+                  <li><strong>Day 2</strong> Narkanda &rarr; Sangla</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Chitkul &rarr; Kalpa</li>
+                  <li><strong>Day 4</strong> Kalpa &rarr; Nako &rarr; Gue &rarr; Tabo</li>
+                  <li><strong>Day 5</strong> Tabo &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 6</strong> Kaza &rarr; Kee &rarr; Langza &rarr; Hikkim &rarr; Komic &rarr; Kaza</li>
+                  <li><strong>Day 7</strong> Kaza &rarr; Kibber &rarr; Chicham Bridge &rarr; Kunzum La &rarr; Chandratal</li>
+                  <li><strong>Day 8</strong> Chandratal &rarr; Atal Tunnel &rarr; Manali</li>
+                  <li><strong>Day 9</strong> Manali &rarr; Chandigarh</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%208N9D%20Kinnaur-Spiti%20package!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== TAB: BIKE TOURS ===== -->
+      <div class="tab-panel" id="tab-bike" role="tabpanel">
+        <div class="itinerary-layout">
+          <div class="itinerary-image-col">
+            <div class="itinerary-sheet-card">
+              <div class="sheet-header">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Full Itinerary Sheet</span>
+              </div>
+              <img src="assets/images/wa2.jpeg" alt="Spiti Valley Bike Tour itineraries — 7N8D and 9N10D" loading="lazy" />
+            </div>
+          </div>
+          <div class="packages-col">
+
+            <div class="pkg-card">
+              <div class="pkg-header">
+                <div class="pkg-duration">7N<br>8D</div>
+                <div class="pkg-info">
+                  <h3>Classic Spiti Ride</h3>
+                  <p>Jibi &rarr; Sangla &rarr; Kaza &rarr; Departure (no Chandratal)</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Jibi Arrival</li>
+                  <li><strong>Day 2</strong> Jibi &rarr; Sangla</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Chitkul &rarr; Nako</li>
+                  <li><strong>Day 4</strong> Nako &rarr; Gue &rarr; Tabo</li>
+                  <li><strong>Day 5</strong> Tabo &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 6</strong> Kaza &rarr; Hikkim &rarr; Komic &rarr; Kaza</li>
+                  <li><strong>Day 7</strong> Kaza &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 8</strong> Departure</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%207N8D%20Classic%20Spiti%20Bike%20Tour!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+            <div class="pkg-card pkg-card--featured">
+              <span class="pkg-badge">Best Pick</span>
+              <div class="pkg-header">
+                <div class="pkg-duration">7N<br>8D</div>
+                <div class="pkg-info">
+                  <h3>Spiti Ride + Chandratal</h3>
+                  <p>Jibi &rarr; Sangla &rarr; Kaza &rarr; Chandratal &rarr; Manali</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Jibi Arrival</li>
+                  <li><strong>Day 2</strong> Jibi &rarr; Sangla / Sarahan</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Chitkul &rarr; Kalpa</li>
+                  <li><strong>Day 4</strong> Kalpa &rarr; Nako &rarr; Dhankar &rarr; Tabo &rarr; Kaza</li>
+                  <li><strong>Day 5</strong> Kaza &rarr; Langza &rarr; Hikkim &rarr; Komic &rarr; Kaza</li>
+                  <li><strong>Day 6</strong> Kaza &rarr; Kibber &rarr; Chicham &rarr; Chandratal</li>
+                  <li><strong>Day 7</strong> Chandratal &rarr; Kunzum La &rarr; Manali</li>
+                  <li><strong>Day 8</strong> Departure from Manali</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%207N8D%20Spiti%20Bike%20Tour%20with%20Chandratal!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+            <div class="pkg-card">
+              <div class="pkg-header">
+                <div class="pkg-duration">9N<br>10D</div>
+                <div class="pkg-info">
+                  <h3>Grand Traverse</h3>
+                  <p>Manali &rarr; Jibi &rarr; Sangla &rarr; Kaza &rarr; Chandratal &rarr; Manali</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Manali Arrival</li>
+                  <li><strong>Day 2</strong> Manali &rarr; Naggar &rarr; Jibi</li>
+                  <li><strong>Day 3</strong> Jibi &rarr; Jalan &rarr; Sarahan</li>
+                  <li><strong>Day 4</strong> Sarahan &rarr; Chitkul &rarr; Kalpa</li>
+                  <li><strong>Day 5</strong> Kalpa &rarr; Nako &rarr; Gue &rarr; Tabo</li>
+                  <li><strong>Day 6</strong> Tabo &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 7</strong> Kaza &rarr; Kee &rarr; Langza &rarr; Hikkim &rarr; Komic &rarr; Kaza</li>
+                  <li><strong>Day 8</strong> Kaza &rarr; Chicham &rarr; Chandratal</li>
+                  <li><strong>Day 9</strong> Chandratal &rarr; Atal Tunnel &rarr; Manali</li>
+                  <li><strong>Day 10</strong> Depart from Manali</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%209N10D%20Grand%20Traverse%20Bike%20Tour!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== TAB: YEAR-ROUND (Oct–Jun) ===== -->
+      <div class="tab-panel" id="tab-winter" role="tabpanel">
+        <div class="itinerary-layout">
+          <div class="itinerary-image-col">
+            <div class="itinerary-sheet-card">
+              <div class="sheet-header">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Full Itinerary Sheet</span>
+              </div>
+              <img src="assets/images/wa3.jpeg" alt="Best Seller Spiti packages — 6N7D, 7N8D, 8N9D" loading="lazy" />
+            </div>
+          </div>
+          <div class="packages-col">
+
+            <div class="pkg-card">
+              <div class="pkg-header">
+                <div class="pkg-duration">6N<br>7D</div>
+                <div class="pkg-info">
+                  <h3>Quick Tour to Spiti</h3>
+                  <p>Chandigarh &rarr; Tabo &rarr; Kaza &rarr; Kalpa &rarr; Shimla</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Chandigarh &rarr; Rampur</li>
+                  <li><strong>Day 2</strong> Rampur Bushar &rarr; Tabo</li>
+                  <li><strong>Day 3</strong> Tabo &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 4</strong> Kaza Sightseeing</li>
+                  <li><strong>Day 5</strong> Kaza &rarr; Nako &rarr; Kalpa</li>
+                  <li><strong>Day 6</strong> Kalpa &rarr; Shimla</li>
+                  <li><strong>Day 7</strong> Shimla &rarr; Chandigarh Drop</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%206N7D%20Quick%20Tour%20to%20Spiti!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+            <div class="pkg-card pkg-card--featured">
+              <span class="pkg-badge">Best Seller</span>
+              <div class="pkg-header">
+                <div class="pkg-duration">7N<br>8D</div>
+                <div class="pkg-info">
+                  <h3>Magical Spiti</h3>
+                  <p>Chandigarh &rarr; Sangla &rarr; Tabo &rarr; Kaza &rarr; Kalpa &rarr; Shimla</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Chandigarh &rarr; Narkanda</li>
+                  <li><strong>Day 2</strong> Narkanda &rarr; Rampur Bushar &rarr; Sangla</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Tabo</li>
+                  <li><strong>Day 4</strong> Tabo &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 5</strong> Kaza &rarr; Kee &rarr; Langza &rarr; Hikkim &rarr; Komic &rarr; Kaza</li>
+                  <li><strong>Day 6</strong> Kaza &rarr; Kibber &rarr; Chicham Bridge &rarr; Kalpa</li>
+                  <li><strong>Day 7</strong> Kalpa &rarr; Shimla</li>
+                  <li><strong>Day 8</strong> Shimla &rarr; Chandigarh</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%207N8D%20Magical%20Spiti%20package!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+            <div class="pkg-card">
+              <div class="pkg-header">
+                <div class="pkg-duration">8N<br>9D</div>
+                <div class="pkg-info">
+                  <h3>Splendid Spiti</h3>
+                  <p>Chandigarh &rarr; Chitkul &rarr; Tabo &rarr; Kaza &rarr; Shimla</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Chandigarh &rarr; Narkanda</li>
+                  <li><strong>Day 2</strong> Narkanda &rarr; Sangla</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Chitkul &rarr; Sangla</li>
+                  <li><strong>Day 4</strong> Sangla &rarr; Nako &rarr; Gue &rarr; Tabo</li>
+                  <li><strong>Day 5</strong> Tabo &rarr; Dhankar &rarr; Kaza</li>
+                  <li><strong>Day 6</strong> Kaza &rarr; Kee &rarr; Langza &rarr; Hikkim &rarr; Komic &rarr; Kaza</li>
+                  <li><strong>Day 7</strong> Kaza &rarr; Kibber &rarr; Chicham Bridge &rarr; Kalpa</li>
+                  <li><strong>Day 8</strong> Kalpa &rarr; Shimla</li>
+                  <li><strong>Day 9</strong> Shimla &rarr; Chandigarh</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%208N9D%20Splendid%20Spiti%20package!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== TAB: KINNAUR ===== -->
+      <div class="tab-panel" id="tab-kinnaur" role="tabpanel">
+        <div class="itinerary-layout">
+          <div class="itinerary-image-col">
+            <div class="itinerary-sheet-card">
+              <div class="sheet-header">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Full Itinerary Sheet</span>
+              </div>
+              <img src="assets/images/wa4.jpeg" alt="Kinnaur packages — 5N6D and 6N7D" loading="lazy" />
+            </div>
+          </div>
+          <div class="packages-col">
+
+            <div class="pkg-card">
+              <div class="pkg-header">
+                <div class="pkg-duration">5N<br>6D</div>
+                <div class="pkg-info">
+                  <h3>Lands of Apples &amp; Gods</h3>
+                  <p>Chandigarh &rarr; Sarahan &rarr; Chitkul &rarr; Kalpa &rarr; Shimla</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Chandigarh &rarr; Narkanda</li>
+                  <li><strong>Day 2</strong> Narkanda &rarr; Sarahan &rarr; Sangla</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Chitkul &rarr; Sangla</li>
+                  <li><strong>Day 4</strong> Sangla &rarr; Kalpa</li>
+                  <li><strong>Day 5</strong> Kalpa &rarr; Shimla</li>
+                  <li><strong>Day 6</strong> Departure from Shimla</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%205N6D%20Kinnaur%20-%20Lands%20of%20Apples%20%26%20Gods!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+            <div class="pkg-card pkg-card--featured">
+              <span class="pkg-badge">Best Seller</span>
+              <div class="pkg-header">
+                <div class="pkg-duration">6N<br>7D</div>
+                <div class="pkg-info">
+                  <h3>Lands of Fairytales</h3>
+                  <p>Chandigarh &rarr; Sarahan &rarr; Chitkul &rarr; Nako &rarr; Kalpa &rarr; Shimla</p>
+                </div>
+              </div>
+              <details class="pkg-itinerary">
+                <summary>Day-by-Day <i class="fa-solid fa-chevron-down"></i></summary>
+                <ol class="day-list">
+                  <li><strong>Day 1</strong> Chandigarh &rarr; Narkanda</li>
+                  <li><strong>Day 2</strong> Narkanda &rarr; Sarahan &rarr; Sangla</li>
+                  <li><strong>Day 3</strong> Sangla &rarr; Chitkul &rarr; Sarahan &rarr; Sangla</li>
+                  <li><strong>Day 4</strong> Sangla &rarr; Nako &rarr; Kalpa</li>
+                  <li><strong>Day 5</strong> Kalpa</li>
+                  <li><strong>Day 6</strong> Kalpa &rarr; Shimla</li>
+                  <li><strong>Day 7</strong> Shimla &rarr; Home Destination</li>
+                </ol>
+              </details>
+              <div class="pkg-footer">
+                <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27m%20interested%20in%20the%206N7D%20Kinnaur%20-%20Lands%20of%20Fairytales!" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-whatsapp"></i> Book This Tour
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Tour CTA -->
+      <div class="custom-tour-band">
+        <div class="custom-tour-text">
+          <h3>Have something else in mind?</h3>
+          <p>Pin Valley, Dhankar Fort, or a route entirely your own — flexible dates, your pace.</p>
+        </div>
+        <a href="https://wa.me/YOUR_PHONE_NUMBER?text=Hi%2C%20I%27d%20like%20to%20plan%20a%20custom%20Spiti%20Valley%20trip!" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Plan a Custom Trip
+        </a>
+      </div>
+
     </div>
   </section>
 
